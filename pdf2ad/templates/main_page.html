@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+
+<head>
+  <title> PDF To Audio Converter </title>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <br>
+    <center>
+     <h1>PDF To Audio Converter</h1>
+     <form action="/getFiles" method="POST" enctype="multipart/form-data">
+       <h5> Upload a pdf file </h5>
+       <input type="file" name="pdf" /> <br><br>
+       <input type="submit" value="Submit" />
+     </form>
+   </center>
+  </body>
+</html>
